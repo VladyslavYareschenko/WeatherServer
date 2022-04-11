@@ -36,7 +36,7 @@ async fn parse_response(response: reqwest::Response) -> Result<Vec<Location>, re
 }
 
 /// Function performs a simple 'GET' request from a geoservice. For now 'OpenWeatherMap' is used as the geoservice, 
-/// since it provides simple way to get geolocation by "city,state,country" request.
+/// because it provides simple way to get geolocation by "city,state,country" request.
 /// The 'Locations' structure is returned, which simply contains the 'Location' vector.
 /// An empty vector is returned if no locations were found for the given search parameters.
 /// Returns with an error if it is impossible to perform request or to parse json-result.
